@@ -551,7 +551,7 @@
  *
  * Define one or both of these to override the default 0-255 range.
  */
-#define FAN_MIN_PWM 50
+#define FAN_MIN_PWM 0
 //#define FAN_MAX_PWM 128
 
 /**
@@ -3540,7 +3540,7 @@
       #define SPEED_POWER_INTERCEPT       0    // (%) 0-100 i.e., Minimum power percentage
       #define SPEED_POWER_MIN             0    // (%) 0-100
       #define SPEED_POWER_MAX           100    // (%) 0-100
-      #define SPEED_POWER_STARTUP        80    // (%) M3/M4 speed/power default (with no arguments)
+      #define SPEED_POWER_STARTUP        10    // (%) M3/M4 speed/power default (with no arguments)
     #endif
 
     // Define the minimum and maximum test pulse time values for a laser test fire function
@@ -3588,7 +3588,7 @@
       /**
        * Include laser power in G0/G1/G2/G3/G5 commands with the 'S' parameter
        */
-      //#define LASER_MOVE_POWER
+      #define LASER_MOVE_POWER
 
       #if ENABLED(LASER_MOVE_POWER)
         // Turn off the laser on G0 moves with no power parameter.
@@ -3644,7 +3644,7 @@
  *
  * NOTE: This option sacrifices some cooling fan speed options.
  */
-//#define LASER_SYNCHRONOUS_M106_M107
+#define LASER_SYNCHRONOUS_M106_M107
 
 /**
  * Coolant Control
