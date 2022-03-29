@@ -1285,7 +1285,7 @@
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
 
-#define Z_PROBE_LOW_POINT          -12 // Farthest distance below the trigger-point to go before stopping  //default is -2, someone says this isn't far enough, changed to -12
+#define Z_PROBE_LOW_POINT          -20 // Farthest distance below the trigger-point to go before stopping  //default is -2, someone says this isn't far enough, changed to -12
 
 // For M851 give a range for adjusting the Z probe offset
 #define Z_PROBE_OFFSET_RANGE_MIN -10
